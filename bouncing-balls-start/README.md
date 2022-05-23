@@ -6,7 +6,7 @@ This is a small game for self-learning, it is inspired by the MDN example: [boun
 
 ## to get start
 ```
-npm run install
+npm install
 npm run start
 ```
 
