@@ -1,0 +1,82 @@
+html, body {
+    margin: 0;
+}
+
+html {
+    font-family: sans-serif;
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+    height: inherit;
+}
+
+
+.content {
+    display: grid;
+    grid-template-columns: auto 200px;
+    gap: 10px;
+    height: inherit;
+    width: 100%;
+    grid-auto-rows: 100%;
+}
+
+.game {
+    width: 100%;
+}
+
+canvas {
+    background: beige;
+}
+
+.game-board {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 200px;
+    grid-auto-rows: auto;
+}
+
+.game-music {
+    margin: 10px;
+}
+
+.scoreboard {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 90%;
+}
+
+.scoreboard h1 {
+    font-size: 1rem;
+    letter-spacing: -1px;
+    margin: 5px;
+    right: 5px;
+    text-shadow: 0 0 4px white;
+}
+
+.scoreboard span {
+    margin: 5px;
+}
+
+.scoreboard button {
+    width: 80px;
+    height: 25px;
+}
+
+.collapse {
+    height: 10%;
+    display: flex;
+    align-items: baseline;
+}
+
+.collapse a {
+    position: absolute;
+    bottom: 0;
+    color: black;
+    font-weight: bold;
+    font-size: large;
+    text-decoration: none;
+}

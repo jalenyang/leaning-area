@@ -1,0 +1,27 @@
+{
+  "name": "bouncing-balls-start",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c --watch",
+    "start": "http-server . -p 8000"
+  },
+  "author": "",
+  "keywords": [
+    "study"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^22.0.0",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "eslint": "^8.15.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "http-server": "^14.1.0",
+    "rollup": "^2.72.1"
+  }
+}
