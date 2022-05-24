@@ -1,7 +1,8 @@
 import { Ball } from "./ball.js";
-import { em_ele, game_ele, btn_ele } from "./ele";
+import { btn_ele, em_ele, game_ele } from "./ele";
 import { Hale } from "./hale";
 import { random, randomColor } from "./utils";
+import { GameAudio } from "./game-audio";
 
 // 设置画布
 const canvas = document.querySelector("canvas");
@@ -80,5 +81,13 @@ function restart() {
   seedBalls(25);
 }
 
+function init() {
+  customElements.define("game-audio", GameAudio);
+}
 
-start();
+function main() {
+  init();
+  start();
+}
+
+main();
