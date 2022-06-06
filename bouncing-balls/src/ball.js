@@ -1,3 +1,5 @@
+import { random } from "./utils";
+
 export class Ball {
 
   constructor(x, y, sx, sy, color, size) {

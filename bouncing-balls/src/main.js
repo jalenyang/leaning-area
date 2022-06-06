@@ -51,8 +51,17 @@ function collisionDetect(ball) {
 function seedBalls(num) {
   while (balls.length < num) {
     const size = random(10, 20);
+    let sx = random(-7, 7);
+    let sy = random(-7, 7);
+    //防止圆球静止不动
+    if (sx === 0) {
+      sx = random(1, 5);
+    }
+    if (sy === 0) {
+      sy = random(1, 5);
+    }
     let ball = new Ball(// 为避免绘制错误，球至少离画布边缘球本身一倍宽度的距离
-      random(0 + size, width - size), random(0 + size, height - size), random(-7, 7), random(-7, 7), randomColor(), size);
+      random(0 + size, width - size), random(0 + size, height - size), sx, sy, randomColor(), size);
     balls.push(ball);
   }
   em_ele.textContent = balls.length;
