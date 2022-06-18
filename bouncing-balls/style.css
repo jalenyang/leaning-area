@@ -54,8 +54,7 @@ canvas {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    justify-content: center;
-    min-height: 90%;
+    justify-content: top;
 }
 
 .scoreboard h1 {
@@ -73,19 +72,4 @@ canvas {
 .scoreboard button {
     width: 80px;
     height: 25px;
-}
-
-.collapse {
-    height: 10%;
-    display: flex;
-    align-items: baseline;
-}
-
-.collapse a {
-    position: absolute;
-    bottom: 0;
-    color: black;
-    font-weight: bold;
-    font-size: large;
-    text-decoration: none;
 }
