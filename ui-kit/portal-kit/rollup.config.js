@@ -3,16 +3,23 @@ import babel from "@rollup/plugin-babel";
 import commonjs from "@rollup/plugin-commonjs";
 import replace from "@rollup/plugin-replace";
 import serve from "rollup-plugin-serve";
-import livereload from "rollup-plugin-livereload";
 import eslint from "@rollup/plugin-eslint";
+import styles from "rollup-plugin-styles";
 
 export default {
   // use glob in the input
   input: ["src/index.js"],
   output: {
     format: "iife",
-    file: "dist/bundle.js"
+    file: "dist/bundle.js",
+    assetFileNames: "[name]-[hash][extname]",
+    // globals: {
+    //   react: "React",
+    //   "react-dom": "ReactDOM",
+    //   antd: "antd"
+    // }
   },
+  // external: ["react", "react-dom", "antd"],
   watch: {
     clearScreen: true
   },
@@ -30,13 +37,13 @@ export default {
       throwOnError: true,
       exclude: ["node_modules/**", "dist/**"]
     }),
+    styles(),
     serve({
       open: true,
       verbose: true,
       contentBase: ["", "public"],
       host: "localhost",
       port: 8080,
-    }),
-    livereload({ watch: "dist" })
+    })
   ]
 };

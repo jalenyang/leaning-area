@@ -1,10 +1,12 @@
 import React, { Component } from "react";
+import { Skeleton, Button } from "antd";
 
 class App extends Component {
   render() {
     return (
       <div>
-        <h1> Hello, World! </h1>
+        <Skeleton></Skeleton>
+        <Button type="primary">Primary Button</Button>
       </div>
     );
   }
