@@ -6,7 +6,7 @@ class App extends Component {
     return (
       <div>
         <Skeleton></Skeleton>
-        <Button type="primary">Primary Button</Button>
+        <Button type="primary">More Button</Button>
       </div>
     );
   }
