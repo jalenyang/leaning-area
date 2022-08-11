@@ -15,7 +15,17 @@ module.exports = {
       {
         test: /\.css$/,
         use: ["style-loader", "css-loader"]
-      }]
+      },
+      {
+        test: /\.less$/i,
+        use: [
+          // compiles Less to CSS
+          "style-loader",
+          "css-loader",
+          "less-loader",
+        ],
+      }
+    ]
   },
   resolve: { extensions: ["*", ".js", ".jsx"] },
   output: {
