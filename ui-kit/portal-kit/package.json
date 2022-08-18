@@ -30,6 +30,7 @@
     "antd": "^4.22.3",
     "less-loader": "^11.0.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "ui-core": "file:./lib/ui-core-0.1.0.tgz"
   }
 }
