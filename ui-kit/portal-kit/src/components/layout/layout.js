@@ -1,4 +1,5 @@
 import React from "react";
+import { postMessage } from "ui-core"
 import "./layout.less";
 
 class Header extends React.Component {
@@ -8,6 +9,7 @@ class Header extends React.Component {
 
   onChange(event) {
     console.log("You selected:" + event.target.value);
+    postMessage("123", "456")
   }
 
   render() {

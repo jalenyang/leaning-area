@@ -1,16 +1,13 @@
-export default class Message extends React.Component {
+function postMessage(payload, target) {
+  console.log("sending message....");
+}
 
-  constructor(props) {
-    super(props);
-  }
-
-  postMessage(payload, target) {
-
-  }
-
-  receiveMessage(event) {
-    if (event.origin !== "") {
-      return
-    }
+function receiveMessage(event) {
+  console.log("receiving message");
+  if (event.origin !== "") {
+    return;
   }
 }
+
+
+export { postMessage, receiveMessage };
