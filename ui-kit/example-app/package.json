@@ -1,7 +1,7 @@
 {
-  "name": "portal-kit",
+  "name": "example-app",
   "version": "1.0.0",
-  "description": "portal of the website",
+  "description": "an example app",
   "private": true,
   "scripts": {
     "build": "webpack",

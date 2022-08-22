@@ -1,3 +1,3 @@
-import { postMessage, receiveMessage } from "./message";
+import { postMessage, receiveMessage } from "./message.js";
 
 export { postMessage, receiveMessage };
